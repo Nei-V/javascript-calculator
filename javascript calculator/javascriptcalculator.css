@@ -1,3 +1,141 @@
 body {
-    background-color:gray;
-};
+    background-color: rgb(228, 220, 220);
+}
+
+#calculatorframe {
+    background-color: rgb(110, 105, 105);
+    width: 300px;
+    height: 500px;
+    margin: 5px;
+    padding: 10px;
+    border: solid;
+    border-width: 1px;
+    /*border-color:rgb(199, 190, 190);*/
+    border-radius: 10px;
+    box-shadow: 7px 7px rgb(65, 62, 62);
+    align-content: center;
+}
+
+#show-exercise {
+    background-color: rgb(199, 189, 189);
+    height: 20px;
+    width: 280px;
+    box-shadow: 4px 4px inset rgb(65, 62, 62);
+    padding: 5px;
+    margin: auto;
+    margin-bottom: -10px;
+}
+
+#show-exercise>p {
+    display: inline;
+    margin: 2px;
+    font-size: 18px;
+}
+
+#show-result {
+    background-color: rgb(216, 205, 205);
+    height: 40px;
+    width: 280px;
+    box-shadow: 4px 4px inset rgb(65, 62, 62);
+    padding: 5px;
+    margin: auto;
+}
+
+#show-result>p {
+    display: inline;
+    margin: 2px;
+    font-size: 36px;
+}
+
+#calc-board {
+    width: 280px;
+    height: 380px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px 10px;
+    grid-template-areas: "AC CE divide multiply-a" "seven eight nine minus" "four five six plus" "one two three equal" "zero-a zero-a dot-a equal";
+}
+
+button {
+    width: 55px;
+    height: 55px;
+    background-color: rgb(39, 38, 38);
+    color: white;
+    margin: auto;
+}
+
+.AC-button-class {
+    grid-area: AC;
+}
+
+.ZERO-button-class {
+    grid-area: zero-a;
+    width: 130px;
+}
+
+.ONE-button-class {
+    grid-area: one;
+}
+
+.TWO-button-class {
+    grid-area: two;
+}
+
+.THREE-button-class {
+    grid-area: three;
+}
+
+.FOUR-button-class {
+    grid-area: four;
+}
+
+.FIVE-button-class {
+    grid-area: five;
+}
+
+.SIX-button-class {
+    grid-area: six;
+}
+
+.SEVEN-button-class {
+    grid-area: seven;
+}
+
+.EIGHT-button-class {
+    grid-area: eight;
+}
+
+.NINE-button-class {
+    grid-area: nine;
+}
+
+.EQUAL-button-class {
+    grid-area: equal;
+    height:130px;
+}
+
+.CE-button-class {
+    grid-area: CE;
+}
+
+.DIVIDE-button-class {
+    grid-area: divide;
+}
+
+.MULTIPLY-button-class {
+    grid-area: multiply-a;
+}
+
+.MINUS-button-class {
+    grid-area: minus;
+}
+
+.PLUS-button-class {
+    grid-area: plus;
+}
+
+.DOT-button-class {
+    grid-area: dot-a;
+}
