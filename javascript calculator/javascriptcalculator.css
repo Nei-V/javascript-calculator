@@ -12,7 +12,7 @@ body {
     border-width: 1px;
     /*border-color:rgb(199, 190, 190);*/
     border-radius: 10px;
-    box-shadow: 7px 7px rgb(65, 62, 62);
+    box-shadow: 7px 7px rgb(65, 62, 62), inset 7px 7px 10px rgb(179, 167, 167);
     align-content: center;
 }
 
@@ -26,9 +26,13 @@ body {
     margin-bottom: -10px;
 }
 
-#show-exercise>p {
-    display: inline;
+#calculatorframe>div>p {
     margin: 2px;
+    width: 100%;
+    text-align: right;
+}
+
+#show-exercise>p {
     font-size: 18px;
 }
 
@@ -42,8 +46,6 @@ body {
 }
 
 #show-result>p {
-    display: inline;
-    margin: 2px;
     font-size: 36px;
 }
 
@@ -64,6 +66,12 @@ button {
     background-color: rgb(39, 38, 38);
     color: white;
     margin: auto;
+    box-shadow: 2px 2px rgb(65, 62, 62), inset 2px 2px 3px rgb(179, 167, 167);
+}
+
+button:hover {
+    background-color: rgb(8, 7, 7);
+    box-shadow: 1px 1px rgb(65, 62, 62), inset 1px 1px 1px rgb(179, 167, 167);
 }
 
 .AC-button-class {
@@ -113,7 +121,7 @@ button {
 
 .EQUAL-button-class {
     grid-area: equal;
-    height:130px;
+    height: 130px;
 }
 
 .CE-button-class {
