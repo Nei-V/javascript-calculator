@@ -1,18 +1,22 @@
 body {
     background-color: rgb(228, 220, 220);
+    align-content: center;
 }
 
+header,footer {
+    text-align: center;
+}
 #calculatorframe {
-    background-color: rgb(110, 105, 105);
+    background-color: #237682;
     width: 300px;
     height: 500px;
-    margin: 5px;
+    margin: auto;
     padding: 10px;
-    border: solid;
-    border-width: 1px;
+    border: transparent;
+    border-width: 0.5px;
     /*border-color:rgb(199, 190, 190);*/
     border-radius: 10px;
-    box-shadow: 7px 7px rgb(65, 62, 62), inset 7px 7px 10px rgb(179, 167, 167);
+    box-shadow: 10px 6px 40px rgb(65, 62, 62), inset 7px 7px 10px #2a8e9e, inset -7px -7px 10px #004e89;
     align-content: center;
 }
 
@@ -24,6 +28,7 @@ body {
     padding: 5px;
     margin: auto;
     margin-bottom: -10px;
+    letter-spacing:1px;
 }
 
 #calculatorframe>div>p {
@@ -43,6 +48,7 @@ body {
     box-shadow: 4px 4px inset rgb(65, 62, 62);
     padding: 5px;
     margin: auto;
+    letter-spacing: 3px;
 }
 
 #show-result>p {
@@ -68,6 +74,7 @@ button {
     margin: auto;
     border-radius: 5px;
     box-shadow: 2px 2px rgb(65, 62, 62), inset 2px 2px 3px rgb(179, 167, 167);
+    font-size:30px;
 }
 
 button:hover {
@@ -148,3 +155,6 @@ button:hover {
 .DOT-button-class {
     grid-area: dot-a;
 }
+
+
+
